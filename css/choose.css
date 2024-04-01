@@ -1,0 +1,113 @@
+.choose-demo__background {
+  background-color: #ffffff;
+  height: 300px;
+}
+
+.choose-demo__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.choose__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #333333;
+}
+.choose__text {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  padding: 15px 0px;
+  width: 75%;
+  text-align: center;
+  font-weight: 600;
+}
+.choose__line {
+  border: 1px solid #c88859;
+  width: 70px;
+  height: 1px;
+}
+
+/* ============================================== Nav Menu ============================================== */
+.choose-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+  height: 90px;
+}
+
+.choose-nav__menu {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  justify-content: center;
+}
+.choose-nav__menu .nav-link.active {
+  color: #c88859;
+}
+.choose-nav__menu li a {
+  color: #414141;
+}
+.choose-nav__menu li a:hover {
+  color: #c88859;
+}
+
+@media screen and (max-width: 1120px) {
+  .choose-nav {
+    height: auto;
+  }
+}
+@media screen and (max-width: 790px) {
+  .choose-nav__menu li {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .choose-nav__menu li {
+    width: 100%;
+  }
+}
+/* ============================================== Choose Content ============================================== */
+.choose__content {
+  background-color: #f7f7f7;
+}
+
+.choose__image {
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.choose__icon__hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: #debda8;
+  transition: opacity 0.4s ease-in-out;
+  cursor: pointer;
+}
+.choose__icon__show {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #ffffff;
+}
+.choose__icon__hidden:hover {
+  opacity: 0.8;
+}
+
+.choose__title__image {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=choose.css.map */

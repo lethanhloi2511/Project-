@@ -1,0 +1,97 @@
+@import 'variables';
+
+// Bakery Background Image\
+.bakery {
+    &__background {
+        position: relative;
+    }
+    &__header {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &__tittle {
+            color: $primary-color;
+        }
+    }
+    &__title__top {
+        font-family: $font-Playfair;
+        font-style: italic;
+    }
+    &__title__bottom {
+        font-family: $font-Poppins;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    // Bakery Content Top
+    &__content__title {
+        font-family: $font-Poppins;
+        font-weight: bold;
+        &__text {
+            font-family: $font-Playfair;
+            font-style: italic;
+            margin: 25px 0;
+        }
+    }
+    &__text {
+        font-family: $font-Poppins;
+        margin-bottom: 50px;
+    }
+    &__text i {
+        margin-right: 15px;
+    }
+    &__content__bottom__right {
+        margin-left: 4rem;
+    }
+}
+
+// Bakery Background Image
+@media screen and (max-width: 992px) {
+    .bakery__title__bottom {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .bakery__title__top {
+        font-size: 15px;
+    }
+    .bakery__title__bottom {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .bakery__header__tittle {
+        text-align: center;
+    }
+}
+
+// =============== Bakery Content ===============
+@media screen and (max-width: 992px) {
+    .bakery__content .bakery__content__top {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .bakery__content__top__left {
+        margin-top: 4rem;
+    }
+}
+@media screen and (max-width: 425px) {
+    .bakery__text {
+        margin-bottom: 20px;
+    }
+}
+
+// Bakery Content Bottom
+@media screen and (max-width: 991px) {
+    .bakery__content__bottom {
+        flex-direction: column-reverse;
+    }
+    .bakery__content__bottom__left {
+        margin-left: 3rem;
+    }
+    .bakery__content__bottom__right {
+        margin-left: 2rem;
+    }
+}

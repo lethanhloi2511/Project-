@@ -1,0 +1,86 @@
+.shortcodes__content {
+  position: relative;
+}
+.shortcodes__number__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+}
+.shortcodes__background {
+  position: relative;
+  margin-bottom: 7rem;
+  background: #fafbfe;
+  height: 155px;
+}
+
+.btn__shortcodes__link {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn__shortcodes__demo {
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  border: 1px solid #7d563a;
+  padding: 15px 35px;
+  top: 5px;
+  left: 10px;
+}
+.btn__shortcodes__demo::after {
+  text-align: center;
+  position: absolute;
+  background-color: #c88859;
+  padding: 15px 35px;
+  content: "ALL SHORTCODES";
+  bottom: 5px;
+  left: -10px;
+}
+.btn__shortcodes__demo:hover {
+  color: #212529;
+  transition: 0.2s linear;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn__shortcodes__demo {
+    padding: 15px 25px;
+  }
+  .btn__shortcodes__demo::after {
+    padding: 15px 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn__shortcodes__demo {
+    padding: 10px 20px;
+  }
+  .btn__shortcodes__demo::after {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .btn__shortcodes__demo {
+    padding: 8px;
+  }
+  .btn__shortcodes__demo::after {
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .btn__shortcodes__demo {
+    border: none;
+    background-color: #c88859;
+    letter-spacing: 1px;
+    padding: 2px 20px;
+    left: -10px;
+  }
+  .btn__shortcodes__demo::after {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=shortcodes.css.map */

@@ -1,0 +1,114 @@
+@import 'variables';
+
+.choose-demo__background{
+    background-color: $background-primary-color;
+    height: 300px;
+}
+.choose-demo__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+    .choose{
+        &__title{
+            font-family: $font-Poppins;
+            font-weight: bold;
+            color: $title-primary-color;
+        }
+        &__text{
+            font-family: $font-Playfair;
+            font-style: italic;
+            padding: 15px 0px;
+            width: 75%;
+            text-align: center;
+            font-weight: 600;
+        }
+        &__line{
+            border: 1px solid $primary-color;
+            width: 70px;
+            height: 1px;
+        }
+    }
+    
+/* ============================================== Nav Menu ============================================== */ 
+.choose-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-second-color;
+    height: 90px;
+}
+    .choose-nav__menu{
+        font-family: $font-Poppins;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 2px;
+        justify-content: center;
+        & .nav-link.active{
+            color: $primary-color;
+        }
+            & li a {
+                color: $text-second-color;
+            }
+            & li a:hover {
+                color: $primary-color;
+            }
+    }
+    
+
+@media screen and (max-width: 1120px){
+    .choose-nav{
+        height: auto;
+    }    
+}
+@media screen and (max-width: 790px){
+    .choose-nav__menu li {
+        width: 40%;
+    }  
+}
+@media screen and (max-width: 600px){
+    .choose-nav__menu li {
+        width: 100%;
+    }
+}
+/* ============================================== Choose Content ============================================== */ 
+.choose__content{
+    background-color: $background-third-color;
+}
+    .choose__image{
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        margin-bottom: 20px;
+    }
+        // ICON HOVER HIDDEN - SHOW 
+        .choose__icon{
+            &__hidden{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                background: $image-hover;
+                transition: opacity 0.4s ease-in-out;
+                cursor: pointer;
+            }
+                &__show{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 100px;
+                    color: $background-primary-color;
+                }
+                &__hidden:hover{
+                    opacity: 0.8;
+                }
+        }
+        // TITLE IMAGE
+        .choose__title__image{
+            font-family: $font-Poppins;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }

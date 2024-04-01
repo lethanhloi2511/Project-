@@ -1,0 +1,243 @@
+@import 'variables';
+
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* ==================== Images Banner ==================== */
+.background-filter-banner {
+    position: absolute;
+    top: 0;
+}
+
+/* ==================== LOGO ==================== */
+.top-nav__logo {
+    margin-top: 25px;
+    margin-left: 50px;
+    background-size: cover;
+}
+@media screen and (max-width: 768px) {
+    .top-nav__logo {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    .top-nav__logo {
+        width: 30%;
+    }
+}
+/* ==================== Menu ==================== */
+.top-nav__menu {
+    font-family: $font-Poppins;
+    font-weight: 600;
+
+    li a:hover {
+        color: $Menu-hover;
+    }
+    a {
+        color: $text-primary-color;
+        letter-spacing: 2px;
+        // border see-all-demo
+        &.see-all-demo {
+            border: 1px solid $border-color;
+            padding: 10px;
+            &:hover {
+                transition: 0.4s linear;
+                background-color: $primary-color;
+                color: $text-primary-color;
+            }
+        }
+        // Button Download
+        &.download-theme {
+            position: relative;
+            border: 1px solid $border-color;
+            padding: 10px;
+            top: 5px;
+            left: 10px;
+            &::after {
+                position: absolute;
+                background-color: $primary-color;
+                padding: 10px;
+                content: 'DOWNLOAD THEME';
+                bottom: 5px;
+                left: -10px;
+            }
+            &:hover {
+                color: #212529;
+                transition: 0.2s linear;
+                // font-weight: bold;
+            }
+        }
+    }
+    .nav-link.active {
+        color: $Menu-hover;
+    }
+}
+// k cố định menu
+.fixed-top {
+    position: absolute;
+}
+
+/* ==================== Responsive Toggle Menu ==================== */
+@media screen and (max-width: 1400px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    .nav-link.download-theme {
+        background-color: $primary-color;
+        padding: 10px;
+        left: 0;
+        top: 0;
+    }
+    .nav-link.download-theme::after {
+        display: none;
+    }
+}
+
+/* ============================================== Content Header ============================================== */
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    &__content {
+        color: $text-primary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__since {
+        display: flex;
+        align-items: baseline;
+        position: fixed;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__line {
+        width: 20px;
+    }
+    &__text-since1991 {
+        font-family: $font-Great;
+        font-size: 21px;
+        margin: 0px 5px;
+    }
+    &__title {
+        font-family: $font-Poppins;
+        font-weight: 600;
+        font-size: 60px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-family: $font-Playfair;
+        font-style: italic;
+        margin-bottom: 50px;
+        width: 70%;
+    }
+    &__yummy {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        width: 50%;
+    }
+}
+.image__hero__spoon-fork {
+    margin: 5px;
+}
+
+.yummy__title {
+    font-family: $font-Great;
+    padding: 0px 20px;
+}
+.image-left-yummy,
+.image-right-yummy {
+    width: 15%;
+}
+/* ==================== RESPONSIVE HERO ==================== */
+@media screen and (max-width: 1400px) {
+    .hero {
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .hero__title {
+        font-size: 42px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .hero {
+        &__title {
+            font-size: 30px;
+        }
+        &__text {
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .hero__yummy {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 930px) {
+    .hero {
+        &__since {
+            top: 35%;
+        }
+        &__yummy {
+            display: none;
+        }
+        &__title {
+            font-size: 21px;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .hero {
+        display: none;
+    }
+}
+/* ============================================== Footer Header ============================================== */
+#header__footer {
+    width: 97%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content__header__footer i {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+.footer__header__tittle {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.footer_header_text {
+    color: #c88859;
+}
+/* ==================== RESPONSIVE Footer Header ==================== */
+@media screen and (max-width: 1615px) {
+    .footer__header__tittle {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1475px) {
+    .footer__header__tittle {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1420px) {
+    #header__footer {
+        display: none;
+    }
+}

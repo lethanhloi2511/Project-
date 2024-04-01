@@ -1,0 +1,104 @@
+.business {
+  position: relative;
+}
+.business__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.business__content__left {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.business__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  width: 50%;
+}
+.business__title__text {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  width: 65%;
+  font-size: 15px;
+  margin: 1.5rem 0;
+}
+.business__line {
+  border: 1px solid #ffffff;
+  width: 70px;
+  height: 1px;
+  margin-bottom: 30px;
+}
+.business__text > i {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 1050px) {
+  .business__content__left {
+    left: 34%;
+  }
+  .business__content__left > h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .business__content__left > h3 {
+    font-size: 20px;
+  }
+  .business__title__text {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+  }
+  .business__line {
+    margin-bottom: 10px;
+  }
+  .business__text {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .business__content__left {
+    left: 50%;
+    width: 50%;
+  }
+  .business__content__left > h3,
+  .business__title__text {
+    width: 100%;
+  }
+  .business__content__right {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .business__content__left {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 523px) {
+  .business__line,
+  .business__text {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .business__content__left > h3 {
+    font-size: 15px;
+  }
+  .business__title__text {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .business__title {
+    font-size: 13px;
+  }
+  .business__title__text {
+    font-size: 9px;
+  }
+}
+
+/*# sourceMappingURL=business.css.map */

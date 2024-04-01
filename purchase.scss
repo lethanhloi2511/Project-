@@ -1,0 +1,105 @@
+@import 'variables';
+
+.purchase {
+    position: relative;
+    &__content {
+        color: $text-primary-color;
+        height: 50%;
+        width: 100%;
+        flex-direction: column;
+        &__position {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__title {
+        font-family: $font-Playfair;
+        font-weight: bold;
+        font-size: 55px;
+        letter-spacing: 1px;
+    }
+}
+// Button View Demo
+.btn__purchase {
+    &__link {
+        padding-left: 0;
+        font-weight: bold;
+    }
+    &__demo {
+        letter-spacing: 2px;
+        color: $text-primary-color;
+        font-family: $font-Poppins;
+        position: relative;
+        border: 1px solid $border-color;
+        padding: 15px;
+        top: 5px;
+        left: 10px;
+        &::after {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            background-color: $primary-color;
+            padding: 15px;
+            content: 'PURCHASE THEME NOW';
+            bottom: 5px;
+            left: -10px;
+        }
+        &:hover {
+            color: #212529;
+            transition: 0.2s linear;
+        }
+    }
+}
+.purchase__text {
+    display: flex;
+    font-family: $font-Poppins;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.purchase__text a {
+    color: $primary-color;
+}
+@media screen and (max-width: 768px) {
+    .purchase__title {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .purchase__title {
+        font-size: 30px;
+    }
+    .btn__purchase__demo {
+        font-size: 12px;
+    }
+    .purchase__text {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .purchase__title {
+        font-size: 22px;
+    }
+    .btn__purchase__demo {
+        padding: 10px;
+        font-size: 8px;
+    }
+    .btn__purchase__demo::after {
+        padding: 10px;
+    }
+    .purchase__text {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .purchase__title {
+        font-size: 16px;
+    }
+    .btn__purchase__demo {
+        font-size: 7px;
+    }
+    .purchase__text {
+        font-size: 9px;
+    }
+}

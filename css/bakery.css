@@ -1,0 +1,88 @@
+.bakery__background {
+  position: relative;
+}
+.bakery__header {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bakery__header__tittle {
+  color: #c88859;
+}
+.bakery__title__top {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+.bakery__title__bottom {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.bakery__content__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.bakery__content__title__text {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin: 25px 0;
+}
+.bakery__text {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+}
+.bakery__text i {
+  margin-right: 15px;
+}
+.bakery__content__bottom__right {
+  margin-left: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .bakery__title__bottom {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bakery__title__top {
+    font-size: 15px;
+  }
+  .bakery__title__bottom {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bakery__header__tittle {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .bakery__content .bakery__content__top {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .bakery__content__top__left {
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .bakery__text {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .bakery__content__bottom {
+    flex-direction: column-reverse;
+  }
+  .bakery__content__bottom__left {
+    margin-left: 3rem;
+  }
+  .bakery__content__bottom__right {
+    margin-left: 2rem;
+  }
+}
+
+/*# sourceMappingURL=bakery.css.map */

@@ -1,0 +1,242 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* ==================== Images Banner ==================== */
+.background-filter-banner {
+  position: absolute;
+  top: 0;
+}
+
+/* ==================== LOGO ==================== */
+.top-nav__logo {
+  margin-top: 25px;
+  margin-left: 50px;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .top-nav__logo {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .top-nav__logo {
+    width: 30%;
+  }
+}
+/* ==================== Menu ==================== */
+.top-nav__menu {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.top-nav__menu li a:hover {
+  color: #bb7f54;
+}
+.top-nav__menu a {
+  color: #fff;
+  letter-spacing: 2px;
+}
+.top-nav__menu a.see-all-demo {
+  border: 1px solid #7d563a;
+  padding: 10px;
+}
+.top-nav__menu a.see-all-demo:hover {
+  transition: 0.4s linear;
+  background-color: #c88859;
+  color: #fff;
+}
+.top-nav__menu a.download-theme {
+  position: relative;
+  border: 1px solid #7d563a;
+  padding: 10px;
+  top: 5px;
+  left: 10px;
+}
+.top-nav__menu a.download-theme::after {
+  position: absolute;
+  background-color: #c88859;
+  padding: 10px;
+  content: "DOWNLOAD THEME";
+  bottom: 5px;
+  left: -10px;
+}
+.top-nav__menu a.download-theme:hover {
+  color: #212529;
+  transition: 0.2s linear;
+}
+.top-nav__menu .nav-link.active {
+  color: #bb7f54;
+}
+
+.fixed-top {
+  position: absolute;
+}
+
+/* ==================== Responsive Toggle Menu ==================== */
+@media screen and (max-width: 1400px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+  .nav-link.download-theme {
+    background-color: #c88859;
+    padding: 10px;
+    left: 0;
+    top: 0;
+  }
+  .nav-link.download-theme::after {
+    display: none;
+  }
+}
+/* ============================================== Content Header ============================================== */
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.hero__content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__since {
+  display: flex;
+  align-items: baseline;
+  position: fixed;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero__line {
+  width: 20px;
+}
+.hero__text-since1991 {
+  font-family: "Great Vibes", cursive;
+  font-size: 21px;
+  margin: 0px 5px;
+}
+.hero__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.hero__text {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin-bottom: 50px;
+  width: 70%;
+}
+.hero__yummy {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 50%;
+}
+
+.image__hero__spoon-fork {
+  margin: 5px;
+}
+
+.yummy__title {
+  font-family: "Great Vibes", cursive;
+  padding: 0px 20px;
+}
+
+.image-left-yummy,
+.image-right-yummy {
+  width: 15%;
+}
+
+/* ==================== RESPONSIVE HERO ==================== */
+@media screen and (max-width: 1400px) {
+  .hero {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .hero__title {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .hero__title {
+    font-size: 30px;
+  }
+  .hero__text {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hero__yummy {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 930px) {
+  .hero__since {
+    top: 35%;
+  }
+  .hero__yummy {
+    display: none;
+  }
+  .hero__title {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .hero {
+    display: none;
+  }
+}
+/* ============================================== Footer Header ============================================== */
+#header__footer {
+  width: 97%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content__header__footer i {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+.footer__header__tittle {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.footer_header_text {
+  color: #c88859;
+}
+
+/* ==================== RESPONSIVE Footer Header ==================== */
+@media screen and (max-width: 1615px) {
+  .footer__header__tittle {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1475px) {
+  .footer__header__tittle {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1420px) {
+  #header__footer {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
